@@ -8,19 +8,17 @@ import { Component } from '@angular/core';
 export class DirectivesComponent {
   constructor(){}
   count :number=0;
-  buttonClicks:number[]=[];
+  buttonClicks :Date[]=[];
   displayButton:boolean=false;
   onClick(){
     this.count++;
-    this.buttonClicks.push(this.buttonClicks.length+1);
+    this.buttonClicks.push(new Date());
     this.displayButton=!this.displayButton;
     
   }
   backColor(){
     return "blue";
   }
-  textColor(){
-    return "white";
-  }
+  
 
 }
