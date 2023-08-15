@@ -1,0 +1,9 @@
+<div class="container">
+    <h1>Directives</h1>
+    <button type="button" class="btn btn-primary"   (click)="onClick()">Display</button>
+    
+    <div *ngFor="let click of buttonClicks"> 
+        <p *ngIf="!displayButton" [ngClass]="{'white-text': click>=5}" [ngStyle]="{'background-color': backColor()}"> The assignment for the direcative is going in  full swing </p>
+
+    </div>
+</div>
